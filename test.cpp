@@ -1,5 +1,4 @@
 #include <iostream>
-
 //Math functions addon 
 #include <cmath>
 
@@ -10,20 +9,12 @@ using namespace std;
 int main() 
 {
 
-  string color, pluralNoun, celebrity;
 
-  cout << "Enter a color: ";
-  getline(cin, color);
-  cout << "Enter a Plural noun: ";
-  getline(cin, pluralNoun);
-  cout << "Enter a celebrity: ";
-  getline(cin, celebrity);
+  int lucky[] = {4,8,15,16,23,24};
 
+  lucky[0] = 200;
 
-  cout << "Roses are "<< color << endl;
-  cout << pluralNoun << " are blue" << endl;
-  cout << "I love "<< celebrity << endl;
-
+  cout << lucky[0];
 
 
 
