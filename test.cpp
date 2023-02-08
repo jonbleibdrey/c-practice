@@ -10,21 +10,20 @@ using namespace std;
 int main() 
 {
 
+  string color, pluralNoun, celebrity;
 
-  // build a cacultor
+  cout << "Enter a color: ";
+  getline(cin, color);
+  cout << "Enter a Plural noun: ";
+  getline(cin, pluralNoun);
+  cout << "Enter a celebrity: ";
+  getline(cin, celebrity);
 
-  // if you wanted same data types on a single line do this int num1, num2
-  // use keyword doubles if you use decimals 
-  int num1;
-  int num2;
 
-  cout << " Enter first number: ";
-  cin >> num1;
+  cout << "Roses are "<< color << endl;
+  cout << pluralNoun << " are blue" << endl;
+  cout << "I love "<< celebrity << endl;
 
-  cout << " Enter second number: ";
-  cin >> num2;
-
-  cout << num1 + num2 ;
 
 
 
