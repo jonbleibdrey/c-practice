@@ -10,33 +10,23 @@ using namespace std;
 int main() 
 {
 
-  //to get a number back from the user
-  int age;
-  
-  cout << "Enter your age: ";
-  cin >> age;
- 
 
-  cout << "you are " << age << " years old.";
+  // build a cacultor
 
-  //to get a a string back from the user
-  string name;
+  // if you wanted same data types on a single line do this int num1, num2
+  // use keyword doubles if you use decimals 
+  int num1;
+  int num2;
 
-  cout << "Enter your name: " ;
+  cout << " Enter first number: ";
+  cin >> num1;
 
-  //this is the way to get a string, cin gets a prompt to pop up and name is the variable.
-  getline(cin, name);
+  cout << " Enter second number: ";
+  cin >> num2;
 
-  cout << "Hello " << name;
+  cout << num1 + num2 ;
 
-  // you could use it mutiple times like this with catname and just name.
-  string catname;
 
-  cout << "Enter your cat name: " ;
-  getline(cin, catname);
- 
-
-  cout << "Hello " << name << " and " << catname;
 
   return 0;
   
