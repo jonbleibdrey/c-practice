@@ -6,26 +6,25 @@
 using namespace std;
 
 
-
-
-
-int power(int baseNum, int powNum)
-{
-
-  int result = 1;
-
-  for(int i = 0; i < powNum; i++){
-    result = result * baseNum;
-
-  }
-  return result;
-}
-
-
 int main() 
 {
 
-  cout << power(4,3);
+  // two dimension array
+  int numberGrid[3][2] = {
+              {1,2}, 
+              {3,4},
+              {5,6}
+  };
+ 
+ cout << "you found: " << numberGrid[2][1] << endl;
+
+ //nested loops
+ for (int i = 0; i < 3; i++) {
+    for (int j=0; j < 2; j++){
+        cout << numberGrid[i][j];
+    }
+    cout << endl;
+ }
 
 
 
