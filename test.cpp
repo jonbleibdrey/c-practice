@@ -13,8 +13,15 @@ class Book {
 //the attributes of a book
   public:
     string title;
-    int pages;
     string author;
+    int pages;
+    // constructor, a function that runs with every object created.
+    Book(string aTitle, string aAuthor, int aPages){
+      title = aTitle;
+      author = aAuthor;
+      pages = aPages;
+      
+    }
 
 };
 
@@ -25,18 +32,17 @@ int main()
 
   //object 
   // is an object that gets created from the "class" above
-  Book book1;
-  book1.title = "Harry Potter";
-  book1.author = "JK Rowling";
-  book1.pages = 500;
+  Book book1("Harry Potter", "JK Rowling", 500);
+    // if you wanted to chnage antything you could.
+    book1.title = "whatever"
 
-  Book book2;
-  book2.title = "Lord of the rings";
-  book2.author = "Tolkein";
-  book2.pages = 700;
+      cout << book1.title << endl;
 
-  cout << book1.title << endl;
-  cout << book2.author;
+
+
+  Book book2("Lord of the rings", "Tolkein", 700);
+  
+    cout << book2.author;
 
 
   return 0;
