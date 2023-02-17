@@ -6,26 +6,37 @@
 using namespace std;
 
 
+//class
+//Basically a blueprint or a template for a book
+class Book {
+
+//the attributes of a book
+  public:
+    string title;
+    int pages;
+    string author;
+
+};
+
+
+
 int main() 
 {
 
-  // two dimension array
-  int numberGrid[3][2] = {
-              {1,2}, 
-              {3,4},
-              {5,6}
-  };
- 
- cout << "you found: " << numberGrid[2][1] << endl;
+  //object 
+  // is an object that gets created from the "class" above
+  Book book1;
+  book1.title = "Harry Potter";
+  book1.author = "JK Rowling";
+  book1.pages = 500;
 
- //nested loops
- for (int i = 0; i < 3; i++) {
-    for (int j=0; j < 2; j++){
-        cout << numberGrid[i][j];
-    }
-    cout << endl;
- }
+  Book book2;
+  book2.title = "Lord of the rings";
+  book2.author = "Tolkein";
+  book2.pages = 700;
 
+  cout << book1.title << endl;
+  cout << book2.author;
 
 
   return 0;
