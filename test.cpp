@@ -5,44 +5,45 @@
 
 using namespace std;
 
-
-//class
-//Basically a blueprint or a template for a book
-class Book {
-
-//the attributes of a book
+class Movie {
+  private:
+  string rating;
   public:
-    string title;
-    string author;
-    int pages;
-    // constructor, a function that runs with every object created.
-    Book(string aTitle, string aAuthor, int aPages){
-      title = aTitle;
-      author = aAuthor;
-      pages = aPages;
-      
+  string title;
+  string director;
+  
+
+  Movie(string aTitle, string aDirector, string aRating){
+    title = aTitle;
+    director = aDirector;
+    setRating(aRating);
+
+
+  }
+
+  void setRating(string aRating){
+    rating = aRating;
+
+    if(aRating == "G"|| aRating == "PG-13" || aRating == "R" || aRating == "NR" || aRating == "PG"){
+      rating = aRating;
+    }else{
+      rating = "NR";
     }
+  }
 
+  string getRating(){
+    return rating;
+  }
 };
-
-
 
 int main() 
 {
 
-  //object 
-  // is an object that gets created from the "class" above
-  Book book1("Harry Potter", "JK Rowling", 500);
-    // if you wanted to chnage antything you could.
-    book1.title = "whatever"
+ Movie avengers("Th Avengers", "Micheal jordan", "R");
 
-      cout << book1.title << endl;
+ avengers.setRating("PG-13");
 
-
-
-  Book book2("Lord of the rings", "Tolkein", 700);
-  
-    cout << book2.author;
+ cout << avengers.getRating();
 
 
   return 0;
